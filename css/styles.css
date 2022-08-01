@@ -688,11 +688,38 @@ portfolio-btn:not(:last-child){
 }
  
                     /* ======== PORTFOLIO PROJECTS =========*/ 
+
+ .overlay {
+    position: absolute;
+    overflow: auto;
+    transform: translate(0, 138%);
+    transition: transform 250ms;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    padding-top: 61px;
+    padding-bottom: 65px;
+    padding-right: 24px;
+    padding-left: 24px;
+    width:  100%;
+    height: 72.6%;
+    color: #FFFFFF;
+    background-color: rgba(33, 150, 243, 0.9);
+ }
                     
-                    
+.portfolio-project-lists:hover .overlay,
+.portfolio-project-lists:focus
+{
+    transform: translate(0,0);
+}
 .portfolio-project-lists {
     flex-basis: calc((100% - 60px)/3);
-    
+    position: relative;
+    display: block;
+    overflow: hidden;
+
  }
                                     
 .portfolio-lists {
