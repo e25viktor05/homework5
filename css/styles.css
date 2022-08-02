@@ -617,7 +617,9 @@ gap: 10px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
-    padding-right: 15px;
+    /* padding-right: 15px; */
+    display: flex;
+    align-items: center;
         }
 
 .contact-email {
@@ -626,6 +628,8 @@ gap: 10px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
+    display: flex;
+    align-items: center;
                 }
     
     .portfolio::after {
