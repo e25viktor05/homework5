@@ -749,6 +749,7 @@ portfolio-btn:not(:last-child){
 .team-list-link-wrapper:focus .overlay
 {
     transform: translate(0,0);
+    
    
     
 }
