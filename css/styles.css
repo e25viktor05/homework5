@@ -714,6 +714,10 @@ portfolio-btn:not(:last-child){
  
                     /* ======== PORTFOLIO PROJECTS =========*/ 
 
+                                        /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                                        0px 4px 4px rgba(0, 0, 0, 0.06),
+                                        1px 4px 6px rgba(0, 0, 0, 0.16); */
+
  .overlay {
     position: absolute;
     overflow-y: scroll;
@@ -732,17 +736,20 @@ portfolio-btn:not(:last-child){
     height: 100%;
     color: #FFFFFF;
     background-color: rgba(33, 150, 243, 0.9);
-    transition: var(--transition-dur-and-fun);
-    
+    transition: var(--transition-dur-and-fun); 
  }
-  .team-list-link-wrapper{
-    display: block;
+
+   .team-list-link-wrapper:hover,
+  .team-list-link-wrapper:focus
+  {
+    display: block;  
   }
  
 .team-list-link-wrapper:hover .overlay,
 .team-list-link-wrapper:focus .overlay
 {
     transform: translate(0,0);
+   
     
 }
 
@@ -762,7 +769,6 @@ portfolio-btn:not(:last-child){
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    
     }
 
 .project-name-cards {
@@ -780,8 +786,7 @@ portfolio-btn:not(:last-child){
     line-height:2.0;
     letter-spacing: 0.06em;
     color: #212121;
-    margin-bottom: 4px;
-   
+    margin-bottom: 4px; 
 }
 
 .project-category {
