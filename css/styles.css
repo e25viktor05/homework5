@@ -735,7 +735,10 @@ portfolio-btn:not(:last-child){
     transition: var(--transition-dur-and-fun);
     
  }
-                    
+  .team-list-link-wrapper{
+    display: block;
+  }
+ 
 .team-list-link-wrapper:hover .overlay,
 .team-list-link-wrapper:focus .overlay
 {
