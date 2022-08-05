@@ -107,6 +107,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+  transition: var(--transition-dur-and-fun);
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -124,6 +125,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+  transition: var(--transition-dur-and-fun);
 }
 .contact-email:hover,
 .contact-email:focus {
@@ -137,6 +139,7 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
   padding-right: 15px;
+  transition: var(--transition-dur-and-fun);
 }
 
 .contact-phone-number:hover,
@@ -149,6 +152,7 @@ body {
   align-items: center;
   margin-right: 10px;
   fill: currentColor;
+  transition: var(--transition-dur-and-fun);
 }
 .social-list-item {
   /* margin-right: 10px; */
@@ -189,6 +193,7 @@ body {
   letter-spacing: 0.06em;
   border-radius: 4px;
   margin-top: 30px;
+  transition: var(--transition-dur-and-fun);
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -393,6 +398,7 @@ body {
   height: 100%;
   border-radius: 50%;
   background-color: #ffffff;
+  transition: var(--transition-dur-and-fun);
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -427,6 +433,7 @@ body {
 .client-list-icon {
   width: 170px;
   height: 92px;
+  transition: fill var(--transition-dur-and-fun);
 }
 
 .client-list-link {
@@ -436,19 +443,20 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
+  transition: fill var(--transition-dur-and-fun);
 }
 
 .client-list-link:hover .client-list-icon,
 .client-list-link:focus .client-list-icon {
   fill: #2196f3;
   cursor: pointer;
-  transition: var(--transition-dur-and-fun);
+  transition: fill var(--transition-dur-and-fun);
 }
 
 .client-list-link:hover,
 .client-list-link:focus {
   border-color: #2196f3;
-  transition: var(--transition-dur-and-fun);
+  transition: fill var(--transition-dur-and-fun);
 }
 
 .constant-client-item:not(:last-child) {
@@ -490,6 +498,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+  transition: color var(--transition-dur-and-fun), background var(--transition-dur-and-fun);
 }
 .contacts:hover,
 .contacts:focus {
@@ -505,6 +514,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: color var(--transition-dur-and-fun), background var(--transition-dur-and-fun);
 }
 
 .contact-detail:hover,
@@ -550,6 +560,7 @@ body {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: color var(--transition-dur-and-fun), background var(--transition-dur-and-fun);
 }
 
 .footer-social-list-icon {
