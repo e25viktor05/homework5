@@ -1,7 +1,7 @@
 :root {
   --primary-font: 'Roboto', sans-serif;
   --accent-color: #2196f3;
-  --transition-dur-and-fun: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-dur-and-fun: 3250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 h1,
 h2,
@@ -107,12 +107,12 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
-  transition: var(--transition-dur-and-fun);
+  transition: color var(--transition-dur-and-fun);
 }
 .menu-link:hover,
 .menu-link:focus {
   color: var(--accent-color);
-  transition: var(--transition-dur-and-fun);
+  transition: color var(--transition-dur-and-fun);
 }
 
 .current {
@@ -125,12 +125,12 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
-  transition: var(--transition-dur-and-fun);
+  transition: color var(--transition-dur-and-fun);
 }
 .contact-email:hover,
 .contact-email:focus {
   color: var(--accent-color);
-  transition: var(--transition-dur-and-fun);
+  /* transition: color var(--transition-dur-and-fun); */
 }
 
 .contact-phone-number {
@@ -139,20 +139,20 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
   padding-right: 15px;
-  transition: var(--transition-dur-and-fun);
+  transition: color var(--transition-dur-and-fun);
 }
 
 .contact-phone-number:hover,
 .contact-phone-number:focus {
   color: var(--accent-color);
-  transition: var(--transition-dur-and-fun);
+  transition: color var(--transition-dur-and-fun);
 }
 
 .social-list-icons {
   align-items: center;
   margin-right: 10px;
   fill: currentColor;
-  transition: var(--transition-dur-and-fun);
+  transition: color var(--transition-dur-and-fun);
 }
 .social-list-item {
   /* margin-right: 10px; */
@@ -163,7 +163,7 @@ body {
 .social-list-icons:hover,
 .social-list-icons:focus {
   fill: var(--accent-color);
-  transition: var(--transition-dur-and-fun);
+  transition: color var(--transition-dur-and-fun);
 }
 
 .studio::after {
@@ -397,23 +397,24 @@ body {
   height: 100%;
   border-radius: 50%;
   background-color: #ffffff;
-  transition: background-color var(--transition-dur-and-fun), fill var(--transition-dur-and-fun);
+  transition: background-color var(--transition-dur-and-fun);
 }
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: #2196f3;
-  transition: var(--transition-dur-and-fun);
+  /* transition: var(--transition-dur-and-fun); */
 }
 
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
   fill: #ffffff;
   cursor: pointer;
-  transition: var(--transition-dur-and-fun);
+  /* transition: var(--transition-dur-and-fun); */
 }
 
 .social-list-icon {
   fill: #afb1b8;
+  transition: fill var(--transition-dur-and-fun);
 }
 
 /* CONSTANT CLIENTS */
@@ -699,8 +700,7 @@ portfolio-btn:not(:last-child) {
 .team-list-link-wrapper:hover,
 .team-list-link-wrapper:focus {
   display: block;
-  transition: color var(--transition-dur-and-fun), box-shadow var(--transition-dur-and-fun),
-    background var(--transition-dur-and-fun);
+  transition: box-shadow var(--transition-dur-and-fun), background var(--transition-dur-and-fun);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -708,8 +708,8 @@ portfolio-btn:not(:last-child) {
 .team-list-link-wrapper:hover .overlay,
 .team-list-link-wrapper:focus .overlay {
   transform: translate(0, 0);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16); */
 }
 
 .portfolio-project-lists {
