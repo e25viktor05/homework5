@@ -390,7 +390,6 @@ body {
 }
 
 .social-list-link {
-  /* display: block; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -398,7 +397,7 @@ body {
   height: 100%;
   border-radius: 50%;
   background-color: #ffffff;
-  transition: var(--transition-dur-and-fun);
+  transition: background-color var(--transition-dur-and-fun), fill var(--transition-dur-and-fun);
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -443,7 +442,7 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
-  transition: fill var(--transition-dur-and-fun);
+  transition: border-color var(--transition-dur-and-fun);
 }
 
 .client-list-link:hover .client-list-icon,
@@ -456,7 +455,6 @@ body {
 .client-list-link:hover,
 .client-list-link:focus {
   border-color: #2196f3;
-  transition: fill var(--transition-dur-and-fun);
 }
 
 .constant-client-item:not(:last-child) {
@@ -560,7 +558,7 @@ body {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: color var(--transition-dur-and-fun), background var(--transition-dur-and-fun);
+  transition: background var(--transition-dur-and-fun);
 }
 
 .footer-social-list-icon {
@@ -669,7 +667,8 @@ portfolio-btn:not(:last-child) {
 .portfolio-btn:focus {
   color: #ffffff;
   background: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
   transition: color var(--transition-dur-and-fun), background var(--transition-dur-and-fun),
     box-shadow var(--transition-dur-and-fun);
@@ -695,7 +694,6 @@ portfolio-btn:not(:last-child) {
   height: 100%;
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
-  transition: color var(--transition-dur-and-fun), background var(--transition-dur-and-fun);
 }
 
 .team-list-link-wrapper:hover,
@@ -703,22 +701,20 @@ portfolio-btn:not(:last-child) {
   display: block;
   transition: color var(--transition-dur-and-fun), box-shadow var(--transition-dur-and-fun),
     background var(--transition-dur-and-fun);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .team-list-link-wrapper:hover .overlay,
 .team-list-link-wrapper:focus .overlay {
   transform: translate(0, 0);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12);
-  transition: color var(--transition-dur-and-fun), box-shadow var(--transition-dur-and-fun),
-    background var(--transition-dur-and-fun);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-project-lists {
   flex-basis: calc((100% - 60px) / 3);
   position: relative;
-  display: block;
-  overflow: hidden;
 }
 
 .team-list-img-wrapper {
