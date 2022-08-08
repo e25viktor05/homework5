@@ -810,6 +810,13 @@ portfolio-btn:not(:last-child) {
 
 .modal-close-btn-icon {
   transition: fill var(--transition-dur-and-fun);
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: border-color var(--transition-dur-and-fun);
 }
 
 .modal-close-btn:hover .modal-close-btn-icon,
