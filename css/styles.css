@@ -1,7 +1,7 @@
 :root {
   --primary-font: 'Roboto', sans-serif;
   --accent-color: #2196f3;
-  --transition-dur-and-fun: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-dur-and-fun: 2250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 h1,
 h2,
@@ -699,12 +699,13 @@ portfolio-btn:not(:last-child) {
 
 .team-list-link-wrapper {
   transition: box-shadow var(--transition-dur-and-fun), background var(--transition-dur-and-fun);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .team-list-link-wrapper:hover,
 .team-list-link-wrapper:focus {
   display: block;
-  /* transition: box-shadow var(--transition-dur-and-fun), background var(--transition-dur-and-fun); */
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -712,8 +713,6 @@ portfolio-btn:not(:last-child) {
 .team-list-link-wrapper:hover .overlay,
 .team-list-link-wrapper:focus .overlay {
   transform: translate(0, 0);
-  /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16); */
 }
 
 .portfolio-project-lists {
